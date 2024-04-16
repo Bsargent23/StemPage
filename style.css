@@ -2,12 +2,14 @@ html {
   height: 100%;
   width: 100%;
 }
+
 body {
-  background-color:#89CFF0;
+  background-color: #89CFF0;
 }
+
 h1 {
   color: hotpink
-} 
+}
 
 
 h1 {
@@ -17,6 +19,7 @@ h1 {
 h2 {
   color: hotpink
 }
+
 h2 {
   font-size: 40px;
 }
@@ -34,12 +37,13 @@ h3 {
 }
 
 h4 {
-  color:#89CFF0 
+  color: #89CFF0
 }
 
 h4 {
   font-size: 30px;
 }
+
 .center {
   display: block;
   margin-left: auto;
@@ -48,13 +52,14 @@ h4 {
 }
 
 
-table{
+table {
   border-collapse: collapse;
-         border: 1px solid black;
+  border: 1px solid black;
 }
 
-th, td {
-      border: 1px solid black;
+th,
+td {
+  border: 1px solid black;
 }
 
 td:first-child {
@@ -78,11 +83,13 @@ td:nth-child(4) {
 }
 
 p {
-  font-size: 20px; color: gold;
+  font-size: 20px;
+  color: gold;
 }
 
 p2 {
-  font-size: 20px; color: darkorange;
+  font-size: 20px;
+  color: darkorange;
 }
 
 
