@@ -17,14 +17,6 @@ console.log("firebase setup complete!");
 
 
 
-
-
-
-
-button.addEventListener("click", function() {
-  alert("Hello, World!");
-})
-
 // create a function to save the madlib
 function saveMadLib() {
   console.log("saveMadLib() called");
