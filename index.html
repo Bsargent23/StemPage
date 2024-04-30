@@ -34,22 +34,20 @@
 
   <br>
   <br>
-
+  
 
   <table>
-    <thead>    
-    <tr>
-      <th colspan="4">
-        <h5 id="myHeader">Subjects taught in Elementary STEM</h5><br>
-      </th>
-      <th colspan="3"> </th>
-    </tr>
-      </thead>
-    
+    <thead id="myHeader">
+      <tr>
+        <th colspan="4">Subjects taught in Elementary STEM</th>
+      </tr>
+    </thead>
+
     <tr>
       <td>
         <h4>Quarter 1 -Engineer Design Process </h4>
       </td>
+
       <td>
         <h4> Quarter 2-Computer Science (coding)</h4>
       </td>
@@ -115,24 +113,30 @@
   <br>
   <br>
   <h2 class="city"> STEM resources and activities</h2>
-  <p2><a href="https://www.sciencebuddies.org/stem-activities">Science Buddies-At home engineering activities
-    </a><br><br>
-    <a href="https://www.pta.org/home/programs/stem/at-home">PTA-STEM at home activities</a><br><br>
-    <a href="https://littlebinsforlittlehands.com/easy-simple-stem-activities-challenges/">Little Bins for Little Hands-
-      At home STEM challenges
-    </a>
-  </p2><br><br>
+  <a href="https://www.sciencebuddies.org/stem-activities">Science Buddies-At home engineering activities
+  </a><br><br>
+  <a href="https://www.pta.org/home/programs/stem/at-home">PTA-STEM at home activities</a><br><br>
+  <a href="https://littlebinsforlittlehands.com/easy-simple-stem-activities-challenges/">Little Bins for Little Hands-
+    At home STEM challenges
+  </a>
+  <br><br>
 
   <form>
     <h2 class="city"><label for="like">What would you like to learn about in STEM Class?</label></h2><br>
-    <p2>Type your answer here:</p2>
+
+    Your name:
+    <input type="text" id="name" name="name" size="50"><br><br>
+    Grade:
+    <input type="text" id="grade" name="grade" size="50"><br><br>
+    What else would you like to learn about?
     <input type="text" id="like" name="like" size="50"><br><br>
 
+    <button id="saveButton" onclick="saveAnswer()">
+      save your answer </button> <br><br>
 
 
 
-    <button onclick="myFunction()">Submit</button>
-    <p id="demo"></p>
+    
 
     <script>
       function myFunction() {
