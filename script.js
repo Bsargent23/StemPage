@@ -21,7 +21,7 @@ console.log("firebase setup complete!");
 function saveMadLib() {
   console.log("saveMadLib() called");
   var storyData = createMadLib()
-  db.collection("madlibs").doc(storyData.storyName).set(storyData); alert(storyData.storyName + " saved to database!");
+    db.collection("madlibs").doc(storyData.storyName).set(storyData); alert(storyData.storyName + " saved to database!");
 }
 
 
