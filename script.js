@@ -23,3 +23,12 @@ function saveMadLib() {
   var storyData = createMadLib()
   db.collection("madlibs").doc(storyData.storyName).set(storyData); alert(storyData.storyName + " saved to database!");
 }
+
+
+// make sure that data is going to firestore
+collectionName = "test runs";
+docName = "test run 2";
+data = { myName: "Dan Stille", class: "Web Development" };
+db.collection(collectionName).doc(docName).set(data);
+console.log("data: " + data);
+alert(docName + " saved to database!!");
