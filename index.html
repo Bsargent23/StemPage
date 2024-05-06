@@ -135,7 +135,9 @@
     <input type="text" id="grade" name="grade" size="50"><br><br>
     What else would you like to learn about?
     <input type="text" id="like" name="like" size="50"><br><br>
-    
+
+    <button id="showButton" onclick="showAnswer()">
+      show your answer </button> <br><br>
     <button id="saveButton" onclick="saveAnswer()">
       save your answer </button> <br><br>
 
@@ -187,9 +189,11 @@
   // Initialize Firebase
   const app = initializeApp(firebaseConfig);
   const analytics = getAnalytics(app);
+
 </script>
 
    <script src="script.js"></script>
+  <p id="StudentAnswers"></p>
 </body>
 
 </html>
