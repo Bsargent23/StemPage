@@ -108,3 +108,16 @@ button {
   display: inline-block;
   font-size: 16px;
 }
+
+.city {
+  background-color: hotpink;
+  color: gold;
+  padding: 10px;
+}
+
+#myHeader {
+  background-color: #89CFF0;
+  color: darkorange;
+  padding: 20px;
+  text-align: center;
+}

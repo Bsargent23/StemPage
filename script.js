@@ -15,11 +15,11 @@ console.log("firebase setup complete!");
 
 // create a function to show the answers
 
-function showAnswers() {
+function saveAnswers() {
 
   console.log("Answers() called");
   
-  var Yourname =                 document.getElementById("Yourname").value;
+  var Yourname = document.getElementById("Yourname").value;
 
   var grade =
     document.getElementById("grade").value;
@@ -36,8 +36,8 @@ function showAnswers() {
       timestamp: Date.now(),
       StudentAnswers: StudentAnswers,
       learn: learn,
-    grade: grade,
-    Yourname: Yourname
+      grade: grade,
+      Yourname: Yourname
 
     };
 
@@ -45,15 +45,16 @@ function showAnswers() {
 
     var storyJSON = JSON.stringify(storyData);
     console.log("storyJSON: " + storyJSON);
-    return storyData;
-  }
+    db.collection("Answers").doc(storyData.Yourname).set(storyData); alert(storyData.Yourname + " saved to database!");
+  
+}
 
 // create a function to save the story
-function saveAnswer() {
-  console.log("saveAnswer() called");
-  var storyData = saveAnswer()
-    db.collection("Answers").doc(storyData.storyName).set(storyData); alert(storyData.storyName + " saved to database!");
-}
+//function saveAnswer() {
+  //console.log("saveAnswer() called");
+  //var storyData = saveAnswer()
+    //db.collection("Answers").doc(storyData.storyName).set(storyData); alert(storyData.storyName + " saved to database!");
+//}
 
 
 // make sure that data is going to firestore
